@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #c4f82a;
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+}
+
+@font-face {
+  font-family: InterRegular;
+  src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: InterSemiBold;
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey-900);
+  font-family: "InterBold";
+  color: var(--primary-color);
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  padding: 40px 30px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+figure {
+  margin-bottom: 24px;
+}
+
+figure img {
+  width: 88px;
+  border-radius: 100%;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 .name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+h1 .location {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 24px;
+  font-family: InterRegular;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a:link,
+a:visited {
+  background-color: var(--grey-700);
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: InterSemiBold;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--secondary-color);
+  color: var(--grey-700);
+}
+
+@media (min-width: 780px) {
+  main {
+    max-width: 384px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
